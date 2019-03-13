@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+.hidden {
+    display: none;
+}
+
 h1, h3 {
     font-family: 'alexbrush', Arial, Helvetica;
     color: #fff;
@@ -70,7 +74,7 @@ img {
     height: 600px;
 }
 
-.text-swap {
+.textSwap {
     width: 400px;
     height: 180px;
     color: #fff;
