@@ -10,7 +10,7 @@
     display: none;
 }
 
-h1, h3 {
+h3 {
     font-family: 'alexbrush', Arial, Helvetica;
     color: #fff;
 }
@@ -26,21 +26,38 @@ p {
     color: #fff;
 }
 
+body {
+    padding: 10px 0px;
+    background-image: url('../images/smoke_bg.jpg');
+}
+
 #container {
     width: 860px;
     height: 850px;
     margin: 0 auto;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 #mainHeader {
     width: 860px;
     height: 150px;
+    position: relative;
 }
 
-h1 {
+#mainHeader h3 {
     font-size: 100px;
     padding: 20px 0px 0px 30px;
+    position: absolute;
+}
+
+#line {
+    width: 550px;
+    height: 2px;
+    background-color: #ffcc00;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 100px;
+    border-radius: 30px;
 }
 
 #linkDiv {
@@ -54,16 +71,27 @@ h1 {
     width: 250px;
     height: 75px;
     text-align: center;
-    background-color: darkgrey;
+    background-color: #000000;
     margin-top: 12px;
+    border-radius: 20px;
+    border: 5px solid #ffcc00;
+}
+
+.link:hover {
+    background-color: #ffcc00;
+}
+
+.link:hover h2 {
+    color: #000000;
 }
 
 .link h2 {
     font-size: 35px;
     padding: 20px;
+    letter-spacing: 3px;
 }
 
-img {
+.phil img {
     margin-left: 355px;
     margin-top: 25px;
 }
@@ -75,7 +103,7 @@ img {
 }
 
 .textSwap {
-    width: 400px;
+    width: 380px;
     height: 180px;
     color: #fff;
     position: absolute;
@@ -88,8 +116,8 @@ img {
 #name {
     position: absolute;
     margin-left: 50px;
-    margin-top: 30px;
-    font-size: 70px;
+    margin-top: 40px;
+    font-size: 80px;
 }
 
 .job {
@@ -99,16 +127,16 @@ img {
 
 #dev {
     margin-left: 50px;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 #des {
-    margin-left: 50px;
-    margin-top: 200px;
+    margin-left: 180px;
+    margin-top: 210px;
 }
 
 #buttonFlex {
-    width: 180px;
+    width: 200px;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -119,29 +147,73 @@ img {
 }
 
 .button {
-    width: 80px;
-    height: 80px;
-    background-color: darkgrey;
+    width: 70px;
+    height: 70px;
+    background-color: #000000;
     border-radius: 15px;
+    border: 5px solid #ffcc00;
+}
+
+.button:hover {
+    background-color: #ffcc00;
+}
+
+.button:hover .arrow {
+    border-color: #000000;
+}
+
+.button:active, .link:active {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
 }
 
 .arrow {
-    width: 40px;
-    height: 40px;
-    border: solid black;
+    width: 30px;
+    height: 30px;
+    border: solid #fff;
     border-width: 0 6px 6px 0;
     display: inline-block;
     padding: 3px;
-    margin-left: 15px;
+    margin-left: 14px;
 }
 
 .up {
     transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .down {
     transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    margin-top: 2px;
+}
+
+#error {
+    text-align: center;
+    font-size: 120px;
+    padding-top: 60px;
+}
+
+#errorText {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+#errorImg {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+#errorLine {
+    width: 550px;
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 0 auto;
+    border-radius: 30px;
 }
