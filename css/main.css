@@ -10,7 +10,7 @@
     display: none;
 }
 
-h1, h3 {
+h3 {
     font-family: 'alexbrush', Arial, Helvetica;
     color: #fff;
 }
@@ -44,7 +44,7 @@ body {
     position: relative;
 }
 
-h1 {
+#mainHeader h3 {
     font-size: 100px;
     padding: 20px 0px 0px 30px;
     position: absolute;
@@ -91,7 +91,7 @@ h1 {
     letter-spacing: 3px;
 }
 
-img {
+.phil img {
     margin-left: 355px;
     margin-top: 25px;
 }
@@ -162,6 +162,12 @@ img {
     border-color: #000000;
 }
 
+.button:active, .link:active {
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    transform: translate(0px, 3px);
+}
+
 .arrow {
     width: 30px;
     height: 30px;
@@ -174,20 +180,40 @@ img {
 
 .up {
     transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin-top: 25px;
 }
 
 .down {
     transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     margin-top: 2px;
 }
 
 #error {
-    position: absolute;
+    text-align: center;
+    font-size: 120px;
+    padding-top: 60px;
 }
 
 #errorText {
-    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+#errorImg {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+#errorLine {
+    width: 550px;
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 0 auto;
+    border-radius: 30px;
 }
