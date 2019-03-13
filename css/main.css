@@ -1,1 +1,143 @@
+@font-face {
+    font-family: 'alexbrush';
+    src: url('../fonts/alexbrush-regular-webfont.woff'),
+         url('../fonts/alexbrush-regular-webfont.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
+h1, h3 {
+    font-family: 'alexbrush', Arial, Helvetica;
+    color: #fff;
+}
+
+h2, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#container {
+    width: 860px;
+    height: 850px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+#mainHeader {
+    width: 860px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 100px;
+    padding: 20px 0px 0px 30px;
+}
+
+#linkDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.link {
+    width: 250px;
+    height: 75px;
+    text-align: center;
+    background-color: darkgrey;
+    margin-top: 12px;
+}
+
+.link h2 {
+    font-size: 35px;
+    padding: 20px;
+}
+
+img {
+    margin-left: 355px;
+    margin-top: 25px;
+}
+
+.swap {
+    position: relative;
+    width: 860px;
+    height: 600px;
+}
+
+.text-swap {
+    width: 400px;
+    height: 180px;
+    color: #fff;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50px;
+    text-indent: 1.2em;
+    line-height: 25px;
+}
+
+#name {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 70px;
+}
+
+.job {
+    position: absolute;
+    font-size: 45px;
+}
+
+#dev {
+    margin-left: 50px;
+    margin-top: 120px;
+}
+
+#des {
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+#buttonFlex {
+    width: 180px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 500px;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    background-color: darkgrey;
+    border-radius: 15px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 15px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-top: 30px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
