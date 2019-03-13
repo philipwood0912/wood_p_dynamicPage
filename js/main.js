@@ -13,10 +13,12 @@
     function showText(x) {
         var textScroll = document.querySelectorAll(".textSwap");
         if (x > textScroll.length) {
-            textIndex = 1;
+            textIndex = 3;
+            return false;
         }
         if (x < 1) {
-            textIndex = textScroll.length;
+            textIndex = 1;
+            return false;
         }
         for (i = 0; i < textScroll.length; i++) {
             textScroll.forEach(text => {
