@@ -1,0 +1,22 @@
+Dev Notes - Dynamic Bio Page
+Philip Wood
+
+After setting up html / css:
+
+A) Switching between members functionality
+	1. Set up a hidden class
+	2. Set up variables for member buttons / divs
+	3. Add a class of hidden to second member div
+	4. Set up event listeners on buttons, on click toggle on / off hidden class on either div
+
+B) Switching between text functionality
+	1. Set up variables for arrow buttons / text divs / textIndex
+	2. Create function to loop through text divs
+	3. Add if statements using textIndex that allow user to continuously loop through text
+	4. Add for statement that loops through the array, adding class of hidden to each text div
+	5. Remove the class of hidden off first item in array
+	6. Add event listener to each arrow button
+		i) Run function on up arrow with textIndex -= 1
+		ii) Run function on down arrow with textIndex += 1
+
+  
